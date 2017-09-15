@@ -86,3 +86,41 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+ion-content.contentWrapper{
+
+  background: #ebffda;
+}
+
+
+ion-header .toolbar-background{
+
+  background: #9fff48;
+}
+ion-header .back-button{
+
+  color: #353232;
+}
+@media only screen and (min-width: 500px) {
+  ion-header ion-title {
+    font-size: 2.1em;
+  }
+
+
+  ion-header .toolbar-title{
+    font-size: 35px;
+    
+  }
+  ion-header ion-navbar{
+    height:80px;
+    
+  }
+  ion-header .back-button{
+    
+      font-size: 30px;
+    }
+
+  
+}
+

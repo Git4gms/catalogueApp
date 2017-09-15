@@ -1,14 +1,14 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="contentWrapper">
+  <ion-row responsive-sm class="langTitleWrap" >
+    <ion-label class="langTitle pageTitleCommon" text-center >SELECT LANGUAGE</ion-label>
+  </ion-row>
+  <ion-row responsive-sm class="langBtnWrap" >
+    <ion-col>
+      <button ion-button  (click)="onlanguageClicked('en')"  block>ENGLISH</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button   (click)="onlanguageClicked('ar')" block>ARABIC</button>
+    </ion-col>
+  </ion-row>
 </ion-content>

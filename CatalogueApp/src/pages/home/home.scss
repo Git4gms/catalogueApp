@@ -1,3 +1,39 @@
 page-home {
 
+ .langTitle{
+    color :#b18505;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+ }
+ .langTitleWrap{
+     margin-top: 20%;
+ }
+ 
+.langBtnWrap{
+     margin-top: 34%;
+ }
+.langBtnWrap button{
+    background: #b18505;
+}
+.langBtnWrap button.button-default.activated{
+    background: #C8A333;
+}
+
+
+ @media only screen and (min-width: 500px) {
+    .langTitle{
+        color :#b18505;
+        font-size: 3.5em;
+        font-weight: bold;
+        margin-top: 50px;
+     
+    }
+    .langBtnWrap button{
+        font-size: 2.2em;
+        background: #A68528;
+    }
+ }
+
+
 }
