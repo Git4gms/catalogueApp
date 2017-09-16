@@ -1,1 +1,15 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu id="appMenu" [content]="appPage">
+    <ion-content>
+    <ion-list class="headTitle">
+            <p>CATALOGUE APP</p>
+    </ion-list>
+      <ion-list>
+        <p><ion-icon name="home"></ion-icon>  Home</p>
+      </ion-list>
+      <ion-list>
+        <p><ion-icon name="md-log-in"></ion-icon>  Login</p>
+          </ion-list>
+    </ion-content>
+  </ion-menu>   
+
+<ion-nav #appPage [root]="rootPage"></ion-nav>

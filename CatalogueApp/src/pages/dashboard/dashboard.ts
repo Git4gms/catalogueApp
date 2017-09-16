@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { MenuController  } from 'ionic-angular';
 
 /**
  * Generated class for the Dashboard page.
@@ -14,7 +14,9 @@ import { Component } from '@angular/core';
 })
 export class Dashboard {
 
-  constructor() {
+  constructor( public menuCtrl: MenuController) {
+
+    this.menuCtrl.enable(true, 'appMenu');
   }
 
   ionViewDidLoad() {

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { GetConstant } from '../../injectables/common';
 import { Helper } from '../../injectables/helper';
-import { NavController } from 'ionic-angular';
+import { NavController,MenuController  } from 'ionic-angular';
 import { Dashboard } from '../dashboard/dashboard';
 
 @Component({
@@ -11,8 +11,9 @@ import { Dashboard } from '../dashboard/dashboard';
 })
 export class HomePage {
 
-  constructor(public storage: Storage,public navCtrl: NavController,public constObj:GetConstant,public helperObj:Helper) {
+  constructor(public storage: Storage,public navCtrl: NavController,public constObj:GetConstant,public helperObj:Helper, public menuCtrl: MenuController) {
 
+    this.menuCtrl.enable(false, 'appMenu');
   }
 
   onlanguageClicked = function(language){

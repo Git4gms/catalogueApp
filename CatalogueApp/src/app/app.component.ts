@@ -17,7 +17,7 @@ export class MyApp {
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,public storage: Storage) {
 
   platform.ready().then(() => {
-      this.storage.get('appLanguage').then(appLanguage=>{
+      this.storage.get('appLanguage1').then(appLanguage=>{
           if(appLanguage != null) {
              
              this.navCtrl.setRoot(Dashboard);
